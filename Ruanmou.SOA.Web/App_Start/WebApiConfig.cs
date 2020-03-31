@@ -17,7 +17,8 @@ namespace Ruanmou.SOA.Web
             config.DependencyResolver = new UnityDependencyResolver(ContainerFactory.BuildContainer());
 
             //config.Filters.Add(new CustomBasicAuthorizeAttribute());//全局注册
-            config.Filters.Add(new CustomExceptionFilterAttribute());
+            
+            config.Filters.Add(new CustomExceptionFilterAttribute());//全局异常特性
 
             config.Services.Replace(typeof(IExceptionHandler), new CustomExceptionHandler());//替换全局异常处理类
 
