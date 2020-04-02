@@ -74,6 +74,7 @@ namespace Ruanmou.SOA.Web.Controllers
         [HttpGet]
 
         //[AllowAnonymous]
+        //单个Action/Controller跨域请求标记
         //[EnableCors(origins: "http://localhost:9099/", headers: "*", methods: "GET,POST,PUT,DELETE")]
         //[CustomBasicAuthorizeAttribute]//方法注册
         //[CustomExceptionFilterAttribute]
