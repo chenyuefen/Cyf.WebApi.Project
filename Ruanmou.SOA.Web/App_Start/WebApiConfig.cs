@@ -22,7 +22,7 @@ namespace Ruanmou.SOA.Web
 
             config.Services.Replace(typeof(IExceptionHandler), new CustomExceptionHandler());//替换全局异常处理类
 
-            //config.EnableCors(new EnableCorsAttribute("*", "*", "*"));//全部都允许 - 跨域请求 ，安装Cros
+            //config.EnableCors(new EnableCorsAttribute("*", "*", "*"));//全部都允许 - 跨域请求 ，安装Cors
 
             // Web API 路由
             config.MapHttpAttributeRoutes();
