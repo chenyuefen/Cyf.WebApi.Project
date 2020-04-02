@@ -12,7 +12,7 @@ namespace Ruanmou.SOA.Web.Utility.Filters
     public class CustomBasicAuthorizeAttribute : AuthorizeAttribute
     {
         /// <summary>
-        /// action前会先来这里完成权限校验
+        /// action前会先来这里完成权限校验 - 权限认证
         /// </summary>
         /// <param name="actionContext"></param>
         public override void OnAuthorization(HttpActionContext actionContext)

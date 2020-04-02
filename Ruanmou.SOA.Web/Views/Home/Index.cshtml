@@ -88,7 +88,7 @@
                     //url: "/api/users/GetUserByName?ticket=" + ticket
                     url: "/api/users/GetUserByName", type: "get", data: { "username": "Superman" },
                     beforeSend: function (XHR) {
-                        //发送ajax请求之前向http的head里面加入验证信息
+                        //发送ajax请求之前向http的head里面加入验证信息 - 前端权限认证
                         XHR.setRequestHeader('Authorization', 'BasicAuth ' + ticket);
                     },
                     success: function (data) {

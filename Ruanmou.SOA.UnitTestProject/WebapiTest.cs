@@ -425,6 +425,9 @@ namespace Ruanmou.SOA.UnitTestProject
 
 
         #region 用户登陆 获取ticket后使用
+        /// <summary>
+        /// 后端权限认证
+        /// </summary>
         private void AuthorizationDemo()
         {
             string ticket = "";
