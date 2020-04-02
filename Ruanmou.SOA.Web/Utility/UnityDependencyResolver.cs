@@ -10,6 +10,10 @@ namespace Ruanmou.SOA.Web.Utility
     public class UnityDependencyResolver : IDependencyResolver
     {
         private IUnityContainer _UnityContainer = null;
+        /// <summary>
+        /// Unity IOC依赖注入
+        /// </summary>
+        /// <param name="container"></param>
         public UnityDependencyResolver(IUnityContainer container)
         {
             _UnityContainer = container;
