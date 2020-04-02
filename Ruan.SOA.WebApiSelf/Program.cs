@@ -14,6 +14,7 @@ namespace Ruan.SOA.WebApiSelf
         {
             try
             {
+                //自宿主启动
                 var config = new HttpSelfHostConfiguration("http://localhost:7077");
                 config.Routes.MapHttpRoute(name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
