@@ -93,6 +93,11 @@ namespace Ruanmou.SOA.Web.Controllers
         }
 
         //GET api/Users/?username=xx
+        /// <summary>
+        /// 通过名字提取用户
+        /// </summary>
+        /// <param name="userName">用户名</param>
+        /// <returns></returns>
         [HttpGet]
         //[CustomBasicAuthorizeAttribute]
         //[CustomExceptionFilterAttribute]

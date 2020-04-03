@@ -33,12 +33,16 @@ namespace Ruanmou.SOA.Web
              defaults: new { id = RouteParameter.Optional }
          );
 
-
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",//默认的api路由
-                routeTemplate: "api/{controller}/{id}",//正则规则，以api开头，第二个是控制器  第三个是参数
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+            //config.Routes.MapHttpRoute(
+            //    name: "DefaultApi",//默认的api路由
+            //    routeTemplate: "api/{controller}/{id}",//正则规则，以api开头，第二个是控制器  第三个是参数
+            //    defaults: new { id = RouteParameter.Optional }
+            //);
 
 
         }
